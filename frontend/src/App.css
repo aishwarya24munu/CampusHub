@@ -1,17 +1,8 @@
-/* =========================
-   APP LAYOUT
-========================= */
-
 .app-layout {
     display: flex;
     min-height: 100vh;
     background: #f5f7fb;
 }
-
-
-/* =========================
-   SIDEBAR
-========================= */
 
 .sidebar {
     width: 250px;
@@ -54,11 +45,6 @@
     color: #9ca3af;
     font-size: 11px;
 }
-
-
-/* =========================
-   NAVIGATION
-========================= */
 
 .sidebar-nav {
     display: flex;
@@ -105,11 +91,6 @@
     background: #2563eb;
     color: white;
 }
-
-
-/* =========================
-   SIDEBAR BOTTOM
-========================= */
 
 .sidebar-bottom {
     margin-top: auto;
@@ -158,21 +139,11 @@
     color: white;
 }
 
-
-/* =========================
-   MAIN AREA
-========================= */
-
 .main-area {
     margin-left: 250px;
     width: calc(100% - 250px);
     min-height: 100vh;
 }
-
-
-/* =========================
-   NAVBAR
-========================= */
 
 .navbar {
     height: 76px;
@@ -255,11 +226,6 @@
     color: #9ca3af;
 }
 
-
-/* =========================
-   CONTENT
-========================= */
-
 .content {
     padding: 30px;
 }
@@ -268,11 +234,6 @@
     max-width: 1500px;
     margin: auto;
 }
-
-
-/* =========================
-   WELCOME
-========================= */
 
 .welcome-section {
     display: flex;
@@ -307,11 +268,6 @@
 .primary-btn:hover {
     background: #1d4ed8;
 }
-
-
-/* =========================
-   STAT CARDS
-========================= */
 
 .stats-grid {
     display: grid;
@@ -361,11 +317,6 @@
     font-size: 10px;
 }
 
-
-/* =========================
-   DASHBOARD GRID
-========================= */
-
 .dashboard-grid {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
@@ -405,11 +356,6 @@
     cursor: pointer;
     font-weight: 600;
 }
-
-
-/* =========================
-   STUDENT TABLE
-========================= */
 
 .table-header,
 .student-row {
@@ -478,11 +424,6 @@
     font-size: 9px;
 }
 
-
-/* =========================
-   QUICK ACTIONS
-========================= */
-
 .quick-actions {
     padding: 8px 15px 15px;
 }
@@ -536,13 +477,7 @@
     background: #fafafa;
 }
 
-
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
-
 @media (max-width: 1100px) {
-
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -550,11 +485,9 @@
     .dashboard-grid {
         grid-template-columns: 1fr;
     }
-
 }
 
 @media (max-width: 800px) {
-
     .sidebar {
         width: 70px;
         padding: 20px 10px;
@@ -607,11 +540,9 @@
     .navbar {
         padding: 0 20px;
     }
-
 }
 
 @media (max-width: 600px) {
-
     .stats-grid {
         grid-template-columns: 1fr;
     }
@@ -644,11 +575,7 @@
     .student-row > span {
         margin-left: 44px;
     }
-
 }
-/* =========================
-   STUDENTS PAGE
-========================= */
 
 .students-page {
     max-width: 1500px;
@@ -862,9 +789,6 @@
     font-size: 12px;
     margin-bottom: 20px;
 }
-/* =========================
-   ADD STUDENT FORM
-========================= */
 
 .form-page {
     max-width: 1100px;
@@ -979,11 +903,7 @@
     cursor: not-allowed;
 }
 
-
-/* Responsive form */
-
 @media (max-width: 700px) {
-
     .form-grid {
         grid-template-columns: 1fr;
     }
@@ -995,11 +915,7 @@
     .form-actions {
         padding: 15px 20px;
     }
-
 }
-/* =========================
-   STUDENT DETAILS
-========================= */
 
 .details-page {
     max-width: 1000px;
@@ -1084,7 +1000,6 @@
         grid-template-columns: 1fr;
     }
 }
-/* LOGIN */
 
 .login-page {
     min-height: 100vh;
