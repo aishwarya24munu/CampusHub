@@ -1,5 +1,4 @@
 const express = require("express");
-const authMiddleware = require("../middleware/authMiddleware");
 
 const {
     getStudents,
@@ -13,21 +12,21 @@ const {
 const router = express.Router();
 
 // GET all students
-router.get("/", authMiddleware, getStudents);
+router.get("/", getStudents);
 
 // GET dashboard statistics
-router.get("/stats/dashboard", authMiddleware, getDashboardStats);
+router.get("/stats/dashboard", getDashboardStats);
 
 // GET student by ID
-router.get("/:id", authMiddleware, getStudentById);
+router.get("/:id", getStudentById);
 
 // POST create student
-router.post("/", authMiddleware, createStudent);
+router.post("/", createStudent);
 
 // PUT update student
-router.put("/:id", authMiddleware, updateStudent);
+router.put("/:id", updateStudent);
 
 // DELETE student
-router.delete("/:id", authMiddleware, deleteStudent);
+router.delete("/:id", deleteStudent);
 
 module.exports = router;
